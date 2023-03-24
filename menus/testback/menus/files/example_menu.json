@@ -1,0 +1,26 @@
+{
+  "name": "Test",
+  "sub_menus":
+  [
+    {
+      "name": "sub_test",
+      "sub_menus":
+      [
+        {
+          "name": "sub_sub_test",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "sub_test",
+      "sub_menus":
+      [
+        {
+          "name": "sub_sub_test",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}

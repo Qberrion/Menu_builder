@@ -1,0 +1,24 @@
+{% load custom_tags %}
+{% load static %}
+{{ draw_menu | safe }}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% draw_menu 'test4' %}
+    {% draw_menu 'test3' %}
+    <div style="margin-left: 400px; position: fixed; top: 0;">
+        <p>Для вызова меню используется данный в ТЗ тег { % draw_menu 'название' % } </p>
+        <p>Сами меню хранятся в виде json/словарей </p>
+        <p>Для из вызова и построения используется функция-рекурсия</p>
+        <p>Таким образом мы убираем ограничения вложенности и количества элементов</p>
+        <p>В template теге есть коментарии для лучшей разборчивости</p>
+    </div>
+</body>
+</html>
